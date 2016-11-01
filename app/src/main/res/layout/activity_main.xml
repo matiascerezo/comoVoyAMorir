@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.matias.comovoyamorir.MainActivity">
+
+    <TextView
+        android:id="@+id/nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="14dp"
+        android:text="@string/tvNombre" />
+
+    <CheckBox
+        android:id="@+id/cbDroga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/cbAlcohol"
+        android:layout_alignBottom="@+id/cbAlcohol"
+        android:layout_alignEnd="@+id/etNombre"
+        android:layout_marginEnd="26dp"
+        android:text="@string/cbDrogas" />
+
+    <CheckBox
+        android:id="@+id/cbAlcohol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/cbTabaco"
+        android:layout_alignBottom="@+id/cbTabaco"
+        android:layout_centerHorizontal="true"
+        android:text="@string/cbAlcohol" />
+
+    <TextView
+        android:id="@+id/fechaNacimiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/etNombre"
+        android:layout_marginTop="14dp"
+        android:text="@string/tvFechaNacimiento" />
+
+    <EditText
+        android:id="@+id/etNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/mostrarNacimiento"
+        android:ems="10"
+        android:hint="@string/hintNombre"
+        android:inputType="textCapSentences"/>
+
+    <EditText
+        android:id="@+id/mostrarNacimiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/cbAlcohol"
+        android:layout_below="@+id/etNombre"
+        android:layout_marginStart="21dp"
+        android:ems="10"
+        android:hint="@string/hintNacimiento"
+        android:inputType="date" />
+
+    <Button
+        android:id="@+id/calcularMuerte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="24dp"
+        android:text="@string/botonMuerte" />
+
+
+    <TextView
+        android:id="@+id/tvTrabajo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tvTrabajo"
+        android:layout_above="@+id/opciones_trabajo" />
+
+    <RadioGroup
+        android:id="@+id/opciones_trabajo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginBottom="19dp"
+        android:layout_above="@+id/calcularMuerte"
+        android:layout_centerHorizontal="true">
+
+    <RadioButton
+        android:id="@+id/rbEsclavo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="@string/rbEsclavo" />
+
+        <Space
+            android:layout_height="wrap_content"
+            android:layout_width="30dp"/>
+
+        <RadioButton
+        android:id="@+id/rbParo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="@string/rbParo"
+        android:layout_margin="@dimen/activity_horizontal_margin"/>
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/cbTabaco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cbTabaco"
+        android:layout_above="@+id/tvTrabajo"
+        android:layout_alignEnd="@+id/fechaNacimiento"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="23dp" />
+
+    <TextView
+        android:text="@string/tvLugar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_below="@+id/mostrarNacimiento"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/etCiudadNacimiento"
+        android:hint="@string/hintLugar"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_marginStart="12dp"
+        android:inputType="textCapSentences"/>
+
+    <TextView
+        android:id="@+id/vicios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tvVicios"
+        android:layout_marginBottom="25dp"
+        android:layout_above="@+id/cbTabaco"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:id="@+id/spSexo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/sexo"
+        android:layout_alignBaseline="@+id/sexo"
+        android:layout_alignBottom="@+id/sexo"
+        android:layout_alignStart="@+id/mostrarNacimiento" />
+
+    <TextView
+        android:id="@+id/sexo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tvSexo"
+        android:layout_marginBottom="30dp"
+        android:layout_above="@+id/vicios"
+        android:layout_alignStart="@+id/cbTabaco" />
+</RelativeLayout>

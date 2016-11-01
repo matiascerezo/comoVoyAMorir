@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">¿Cómo voy a morir?</string>
+    <string name="secondName">Tu muerte</string>
+    <string name="tvNombre">NOMBRE:</string>
+    <string name="tvFechaNacimiento">FECHA NACIMIENTO:</string>
+    <string name="tvLugar">LUGAR DE NACIMIENTO:</string>
+    <string name="tvSexo">SEXO:</string>
+    <string name="tvVicios">VICIOS</string>
+    <string name="tvTrabajo">TRABAJO</string>
+    <string name="botonVolver">VOLVER A CALCULAR</string>
+    <string name="botonSalir">SALIR</string>
+    <string name="botonMuerte">CALCULAR MI MUERTE</string>
+    <string name="hintNombre">Ej: Matías</string>
+    <string name="hintNacimiento">Ej: 29/09/1996</string>
+    <string name="hintLugar">Ej: Barcelona</string>
+    <string-array name="sexo">
+        <item>Hombre</item>
+        <item>Mujer</item>
+        <item>Perro</item>
+        <item>Gato</item>
+    </string-array>
+    <string name="cbAlcohol">Alcohol</string>
+    <string name="cbDrogas">Drogas</string>
+    <string name="cbTabaco">Tabaco</string>
+    <string name="rbEsclavo">Esclavo</string>
+    <string name="rbParo">Parado</string>
+    <string-array name="muertes">
+        <item>Te caerá un piano en la cabeza y de camino al hospital, la ambulancia caerá por un barranco. Serás el único que muera.</item>
+        <item>Un día abriendo tu caja fuerte, no te acordarás de la combinación y le darás patadas hasta que te rompas el dedo gordo
+            desarrollarando una infección y acabarás muriendo.</item>
+        <item>Irás caminando por la calle, pisarás una cáscara de naranja y te resbalarás, morirás al golpearte en la cabeza con el suelo.</item>
+        <item>Te encontrarás indispuesto y cagarás hasta la muerte.</item>
+        <item>Te harás socorrista y en la fiesta de graduación morirás ahogado en la piscina.</item>
+        <item>Te va a dar por ser mago y en el truco de intentar salir de una piscina atado con cadenas, morirás ahogado.</item>
+        <item>Estarás en el trabajo, vendrá tu compañero loco y te matará pensando que eres un dinosaurio.</item>
+        <item>Morirás atragantado con una pipa pelada.</item>
+        <item>Cabrearás a unas avispas y vendrán todas a picarte. Morirás atropellado mientras huyes de ellas. </item>
+        <item>Un día vendrás tan hambriento que comerás un trozo de pollo y morirás ahogado con el hueso.</item>
+        <item>Estando en una granja, te resbalarás con las heces de las vacas y tragarás demasiado, causando tu muerte.</item>
+        <item>Morirás ahorcado con tu propia bufanda al engancharse a la rueda trasera de tu bicicleta.</item>
+    </string-array>
+</resources>
